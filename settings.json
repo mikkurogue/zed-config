@@ -16,7 +16,12 @@
     "warning.background": "#ea9d34",
     "warning.border": "#ea9d34",
     "warning": "#ea9d34",
-    "text": "#f6c177"
+    "text": "#f6c177",
+    "syntax": {
+      "type": {
+        "color": "#9ccfd8"
+      }
+    }
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
