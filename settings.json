@@ -1,0 +1,32 @@
+// mikkurogue's zed settings
+//
+// TODO: Figure out the proper LSP settings for VSTSLS
+// TODO: Figure out Rust LSP for proper completion
+// TODO: Figure out specific Go settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Rosé Pine",
+  "experimental.theme_overrides": {
+    "warning.background": "#ea9d34",
+    "warning.border": "#ea9d34",
+    "warning": "#ea9d34",
+    "text": "#f6c177"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "importModuleSpecifierPreference": "relative"
+        }
+      }
+    }
+  }
+}
