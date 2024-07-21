@@ -1,8 +1,4 @@
-// mikkurogue's zed settings
-//
-// TODO: Figure out the proper LSP settings for VSTSLS
-// TODO: Figure out Rust LSP for proper completion
-// TODO: Figure out specific Go settings
+// Zed settings
 //
 // For information on how to configure Zed, see the Zed
 // documentation: https://zed.dev/docs/configuring-zed
@@ -11,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
   "theme": "Rosé Pine",
   "experimental.theme_overrides": {
     "warning.background": "#ea9d34",
@@ -23,13 +22,29 @@
       }
     }
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
   "lsp": {
     "typescript-language-server": {
+      // todo change to VSTLS
       "initialization_options": {
         "preferences": {
           "importModuleSpecifierPreference": "relative"
+        }
+      }
+    },
+    // GO LSP
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": true,
+        "completeUnimported": true,
+        "staticcheck": true,
+        "organizeImports": true
+      }
+    },
+    // RUST LSP
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "loadOutDirsFromCheck": true
         }
       }
     }
